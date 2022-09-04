@@ -57,7 +57,7 @@
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.6;
   --bs-body-color: #212529;
-  --bs-body-bg: #f8fafc;
+  --bs-body-bg: #fff;
   --bs-border-width: 1px;
   --bs-border-style: solid;
   --bs-border-color: #dee2e6;
@@ -95,9 +95,19 @@ body {
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
   background-color: var(--bs-body-bg);
+
+/* 水玉 */
+  background-image:
+   radial-gradient(#7bded9 20%, transparent 20%),
+    radial-gradient(#7bded9 20%, transparent 20%);
+  background-size: 40px 40px;
+  background-position: 0 0, 20px 20px;
+}
+
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
 
 hr {
   margin: 1rem 0;
