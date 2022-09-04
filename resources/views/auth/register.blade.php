@@ -1,7 +1,8 @@
 @extends('layouts.app')
+<link rel="stylesheet" href="{{ asset('css/register.css') }}">
 
 @section('content')
-<div class="container">
+{{-- <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -73,5 +74,30 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
+    <div class="container">
+            <form action="/teamhiroshima/add" method="post">
+                                @csrf
+                <table border="1" width="700" >
+                    <caption>new item</caption>
+                    <colgroup>
+                    <tr scope="col">
+                <th rowspan="1" scope="col" class="skeletor">商品管理システム</th><tr></tr><tr></tr>
+                </colgroup>
+                <th rowspan="6" scope="col" class="heman">商品一覧</th>
+
+                    <th class="add-title">名前<tr><td>
+                        <input type= "varchar" name="name" placeholder="名前">
+                        </td></tr></th>
+                    <th class="add-title">種別<tr><td>
+                        <input type="smallint" name="type" placeholder="種別">
+                        </td></tr></th>
+                    <th class="add-title">詳細<tr><td>
+                        <input type="varchar" name="detail" placeholder="詳細">
+                        </td></tr></th>
+                        <tr><th></th><td><input type="submit" value="登録">
+                        </td></tr></tr>
+                </table>
+            </form>
+    </div>
 @endsection
