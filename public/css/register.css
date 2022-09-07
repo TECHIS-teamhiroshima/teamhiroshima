@@ -1,65 +1,93 @@
-@import url('https://fonts.googleapis.com/css?family=Sacramento');
+@import url("https://fonts.googleapis.com/css?family=Sacramento");
 
 
 caption {
     padding: 30px;
     caption-side: bottom;
-    font-size: 3rem;
+    font-size: 5rem;
     text-align: center;
-        font-family: 'Sacramento', cursive;
+    font-family: "Sacramento", cursive;
+    color: rgb(253, 0, 0);
+    text-shadow: 1px 1px 0 #fff, 0 0 9px #000;
+
 }
 
 table {
     border-collapse: collapse;
-    border: 2px solid rgba(238, 20, 20, 0.625);
+    border: 1.5px solid #0000009f;
     letter-spacing: 1px;
-    font-size: .8rem;
-        background-color: rgb(103, 225, 241);
-
+    font-size: 0.8rem;
+    background-color: rgb(255, 255, 255);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
 }
 input {
-    width: 400px;
+    width: 300px;
+}
 
+input[type="submit"] {
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 120px;
+}
+
+.add-yohaku {
+    text-align: left;
+    padding-left: 30px;
 }
 
 td,
 th {
-    border: 1px solid rgb(164, 216, 86);
-    padding: 15px 5px;
-    font-size: .8rem;
-
-
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px 5px;
+    font-size: 0.8rem;
 }
 
 th {
     background-color: rgb(103, 225, 241);
 }
 
-.add-title{
-        background-color: rgb(125, 203, 231);
-
+.add-title {
+    background-color: rgb(255, 255, 255);
+    padding: 20px 1px 1px 60px;
+    /* font-family: 'Dancing Script', cursive; */
 }
 
 td {
     text-align: center;
-
 }
 
 tr:nth-child(even) td {
-    background-color: rgb(230, 70, 70);
+    background-color: rgb(255, 255, 255);
 }
 
 tr:nth-child(odd) td {
-    background-color: rgb(125, 203, 231);
+    background-color: rgb(255, 255, 255);
 }
 
 .heman {
-    font: 3rem molot;
-    text-shadow: 1px 1px 1px #fff, 2px 2px 1px #000;
+    font: 1.0rem molot;
+    text-align: left;
+    padding: 5px 5px 260px 30px;
+    background-color: #fff;
+    border-right: solid;
 }
 
 .skeletor {
-    font: 1.7rem rapscallion;
+    font: 0.9rem rapscallion;
     letter-spacing: 3px;
     text-shadow: 1px 1px 0 #fff, 0 0 9px #000;
+    text-align: center;
+    border-right: solid;
+}
+
+.yohaku {
+    background-color: #fff;
+    border-right: solid;
+}
+
+
+.side-reft{
+    display: flex;
 }
