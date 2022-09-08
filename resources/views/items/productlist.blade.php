@@ -7,7 +7,7 @@
                 <div class="side-title">
                     <h5>商品管理システム</h5>
                 </div>
-                <div class="side-mune">
+                <div class="side-menu">
                     <a href="">商品一覧</a>
                 </div>
         </div>

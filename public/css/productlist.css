@@ -2,6 +2,7 @@
     display: flex;
     max-width: 1200px;
     margin: auto;
+    border: solid 1px;
 }
 
 .main-content {
@@ -10,7 +11,12 @@
 }
 
 .side-content {
-    margin: 10px auto;
+    padding: 10px 0;
+    border-right: solid 1px;
+}
+
+.side-menu {
+    margin-top: 20px;
 }
 
 .page-title {
