@@ -2,6 +2,7 @@
     display: flex;
     max-width: 1200px;
     margin: auto;
+    border: 1px solid;
 }
 
 .main-content {
@@ -10,7 +11,11 @@
 }
 
 .side-content {
-    margin: 10px auto;
+    border-right: 1px solid;
+}
+.side-title h5 {
+    background-color: aquamarine;
+    padding: 10px 10px;
 }
 
 .page-title {
