@@ -18,6 +18,15 @@
     padding: 10px 10px;
 }
 
+.side-menu {
+    margin-left: 10px;
+}
+
+.side-menu a {
+    text-decoration: none;
+    color: black;
+}
+
 .page-title {
     display: flex;
 }
@@ -34,6 +43,3 @@
     border: solid 1px;
 }
 
-.side-menu {
-    margin-left: 10px;
-}

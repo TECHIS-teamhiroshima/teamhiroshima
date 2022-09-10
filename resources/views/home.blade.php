@@ -2,13 +2,13 @@
 
 @section('content')
 <body>
-    <div class="main" style="height: 500px;">
+    <div class="home-main">
         <div class="side-content">
                 <div class="side-title">
                     <h5>商品管理システム</h5>
                 </div>
-                <div class="side-mune">
-                    <a href="{{ url('/items') }}" style="margin-left: 10px;">商品一覧</a>
+                <div class="side-menu">
+                    <a href="{{ url('/items') }}">商品一覧</a>
                 </div>
         </div>
         <div class="main-content">

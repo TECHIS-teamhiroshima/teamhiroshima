@@ -1,0 +1,10 @@
+.home-main {
+    height: 500px;
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    border: 1px solid;
+}
+.side-menu a {
+    margin-left: 10px;
+}
