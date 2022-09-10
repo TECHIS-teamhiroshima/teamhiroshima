@@ -22,7 +22,7 @@
     <link href="{{ asset('css/add.css') }}" rel="stylesheet" >
     {{-- <link href="{{ asset('css/edit.css') }}" rel="stylesheet" > --}}
     <link rel="stylesheet" href="{{ asset('css/productlist.css') }}">
-
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}">
 </head>
 <body>
     <div id="app">
