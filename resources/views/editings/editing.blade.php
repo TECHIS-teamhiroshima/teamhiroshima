@@ -16,7 +16,9 @@
                 <h2>商品編集画面</h2>
                 <a href="">商品登録画面</a>
             </div>
-
+            <div class="main-container">
+                
+            </div>
         </div>
     </div>
 </body>
