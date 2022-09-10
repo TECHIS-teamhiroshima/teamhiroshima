@@ -13,23 +13,10 @@
         </div>
         <div class="main-content">
             <div class="page-title">
-                <h2>商品一覧画面</h2>
+                <h2>商品編集画面</h2>
                 <a href="">商品登録画面</a>
             </div>
-            <div class="item-table">
-                <table class="table">
-                    <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>名前</th>
-                        <th>種別</th>
-                        <th>詳細</th>
-                    </tr>
-                    </thead>
-                    <tbody id="tbl">
-                    </tbody>
-                </table>
-            </div>
+
         </div>
     </div>
 </body>
