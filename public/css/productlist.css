@@ -18,6 +18,10 @@
     padding: 10px 10px;
 }
 
+.side-menu {
+    padding-left: 10px;
+}
+
 .page-title {
     display: flex;
 }
