@@ -96,8 +96,9 @@
                     <option value="アクセサリ"></option>
                 </datalist>
         <h6>詳 細</h6>
-        <input type="varchar" name="detail" placeholder="詳細を入力してください">
-        <br>
+        <textarea name="detail" rows="5" cols="40" placeholder="詳細を入力してください">
+        </textarea>
+            <br>
         <input type="submit" value="登　録" >
     </div>
 </div>
