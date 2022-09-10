@@ -21,3 +21,4 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/items', [App\Http\Controllers\ItemController::class, 'items']);
+Route::get('/editing', [App\Http\Controllers\EditingScreenController::class, 'editing'])->name('editing');

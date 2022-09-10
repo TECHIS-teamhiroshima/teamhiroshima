@@ -41,5 +41,10 @@
 
 .tr,th,td {
     border: solid 1px;
+    text-decoration: none;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}

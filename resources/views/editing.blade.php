@@ -5,7 +5,7 @@
     <div class="main">
         <div class="side-content">
                 <div class="side-title">
-                    <h5>商品管理システム</h5>
+                    <h5>商品管理シテム</h5>
                 </div>
                 <div class="side-menu">
                     <a href="">商品一覧</a>
@@ -27,14 +27,6 @@
                     </tr>
                     </thead>
                     <tbody id="tbl">
-                    @foreach ($items as $item)
-                        <tr>
-                            <td>{{ $item->id }}</td>
-                            <td>{{ $item->name }}</td>
-                            <td>{{ $item->type }}</td>
-                            <td><a href="">{{ $item->detail }}</a></td>
-                        </tr>
-                    @endforeach
                     </tbody>
                 </table>
             </div>
