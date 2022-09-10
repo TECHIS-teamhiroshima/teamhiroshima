@@ -19,10 +19,10 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
- feature-update-setting
+    <link href="{{ asset('css/add.css') }}" rel="stylesheet" >
+    {{-- <link href="{{ asset('css/edit.css') }}" rel="stylesheet" > --}}
     <link rel="stylesheet" href="{{ asset('css/productlist.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/register.css') }}">
- main
+
 </head>
 <body>
     <div id="app">

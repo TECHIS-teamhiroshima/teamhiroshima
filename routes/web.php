@@ -18,9 +18,7 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-feature-update-setting
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Route::get('/items', [App\Http\Controllers\ItemController::class, 'items']);
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-main
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'home'])->name('home');
+Route::get('/items', [App\Http\Controllers\ItemController::class, 'items'])->name('items');
+Route::get('/add', [App\Http\Controllers\addController::class, 'add'])->name('add');
+// Route::get('/edit', [App\Http\Controllers\editController::class, 'edit'])->name('edit');

@@ -14,13 +14,13 @@ caption {
 
 table {
     border-collapse: collapse;
-    border: 1.5px solid #0000009f;
     letter-spacing: 1px;
     font-size: 0.8rem;
     background-color: rgb(255, 255, 255);
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
+    border: 2px #212529 solid;
 }
 input {
     width: 300px;
@@ -37,9 +37,11 @@ input[type="submit"] {
     padding-left: 30px;
 }
 
+table
 td,
+table
 th {
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px #f8fafc solid;
     padding: 10px 5px;
     font-size: 0.8rem;
 }
@@ -52,7 +54,7 @@ th {
     background-color: rgb(255, 255, 255);
     padding: 20px 1px 1px 60px;
     /* font-family: 'Dancing Script', cursive; */
-/* }
+}
 
 td {
     text-align: center;
@@ -90,28 +92,4 @@ tr:nth-child(odd) td {
 
 .side-reft{
     display: flex;
-} */ */
-
-
-/* caption {
-    padding: 30px;
-    caption-side: bottom;
-    font-size: 5rem;
-    text-align: center;
-    font-family: "Sacramento", cursive;
-    color: rgb(253, 0, 0);
-    text-shadow: 1px 1px 0 #fff, 0 0 9px #000;
-
 } */
-
-
-.end {
-    padding: 30px;
-    caption-side: bottom;
-    font-size: 5rem;
-    text-align: center;
-    font-family: "Sacramento", cursive;
-    color: rgb(253, 0, 0);
-    text-shadow: 1px 1px 0 #fff, 0 0 9px #000;
-}
-
