@@ -16,12 +16,4 @@ class ItemController extends Controller
             'items' => $items,
         ]);
     }
-
-    public function home1()
-    {
-        return view('home1', [
-
-        ]
-    );
-    }
 }
