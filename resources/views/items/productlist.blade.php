@@ -32,7 +32,7 @@
                             <td>{{ $item->id }}</td>
                             <td>{{ $item->name }}</td>
                             <td>{{ $item->type }}</td>
-                            <td><a href="">{{ $item->detail }}</a></td>
+                            <td><a href="{{ url('/editing') }}">{{ $item->detail }}</a></td>
                         </tr>
                     @endforeach
                     </tbody>

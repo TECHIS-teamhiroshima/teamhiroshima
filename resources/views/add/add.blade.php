@@ -81,14 +81,6 @@
         <h6 class="text-top">名 前</h6>
         <input type= "varchar" name="name" placeholder="商品名を入力してください">
         <h6>種 別</h6>
-            {{-- <div class="syubetu">
-                <select name='syubetu'>
-                    <option value="" disabled selected style="display:none;">種類を入力してください</option>
-                    <option value='kutu'>靴</option>
-                    <option value='huku'>服</option>
-                    <option value='sonota'>その他</option>
-                </select>
-            </div> --}}
             <input type="text" name="test" placeholder="詳細を入力してください" list="syubetu">
                 <datalist id="syubetu" >
                     <option value="靴"></option>
