@@ -1,0 +1,26 @@
+.main {
+    width: 800px;
+}
+.side-content{
+    width: 250px;
+}
+.page-title {
+    margin-left: 20px;
+}
+.page-title a {
+    margin-right: 20px;
+}
+.rigth {
+    margin-left: 20px;
+}
+.text-top {
+    margin: 0;
+}
+.text-second {
+    margin: 0;
+    margin-top: 10px;
+}
+.text-serd {
+    margin: 0;
+    margin-top: 10px;
+}
