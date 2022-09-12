@@ -3,6 +3,7 @@ url("https://fonts.googleapis.com/css?family=Sacramento");
 @import
 url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
 
+
 .add-main{
     display: flex;
     border: 1px #181819 solid;
@@ -37,13 +38,12 @@ url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
 }
 
 .text-top{
-    padding-top: 80px;
+    padding-top: 30px;
 }
 
 h6{
     padding: 25px 10px 5px 40px;
     font-size: large;
-    font-family:fantasy;
     font-family: 'Reggae One', cursive;
 }
 
@@ -66,14 +66,6 @@ select{
     border: unset;
 }
 
-input[type="submit"] {
-    margin: 50px 20px 20px 20px;
-    padding: 10px;
-    width: 300px;
-    text-align: center;
-    font-size: 20px;
-}
-
 textarea{
     width: 100%;
     margin-left: 20px;
@@ -83,9 +75,18 @@ textarea{
     border: unset;
 }
 
+input[type="submit"] {
+    margin: 50px 20px;
+    margin-left: center;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+    font-size: 20px;
+}
 
-
-
+.detail-submit{
+    text-align: center;
+}
 
 .end {
     padding: 30px;
