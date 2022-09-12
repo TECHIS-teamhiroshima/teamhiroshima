@@ -24,8 +24,7 @@
                         <option value="アクセサリ"></option>
                     </datalist>
             <h6>詳 細</h6>
-                    <textarea name="detail-text" rows="10" cols="58" placeholder="詳細を入力してください">
-                    </textarea>
+                    <textarea name="detail-text" rows="10" cols="55" placeholder="詳細を入力してください"></textarea> </textarea>
                 <br>
                     <div class="detail-submit">
                         {{ csrf_field() }}
