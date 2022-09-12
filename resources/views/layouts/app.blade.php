@@ -20,9 +20,13 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/add.css') }}" rel="stylesheet" >
-    {{-- <link href="{{ asset('css/edit.css') }}" rel="stylesheet" > --}}
+    <link href="{{ asset('css/edit.css') }}" rel="stylesheet" >
+    <link href="{{ asset('css/detail.css') }}" rel="stylesheet" >
     <link rel="stylesheet" href="{{ asset('css/productlist.css') }}">
     <link rel="stylesheet" href="{{ asset('css/home.css') }}">
+    {{-- detail用js/jqueyのlink --}}
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
+
 </head>
 <body>
     <div id="app">
