@@ -13,6 +13,6 @@ class EditingScreenController extends Controller
      */
     public function editing()
     {
-        return view('editing');
+        return view('editings.editing');
     }
 }

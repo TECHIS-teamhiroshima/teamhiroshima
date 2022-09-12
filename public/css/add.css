@@ -3,10 +3,13 @@ url("https://fonts.googleapis.com/css?family=Sacramento");
 @import
 url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
 
-.main{
+
+.add-main{
+    display: flex;
     border: 1px #181819 solid;
     border-radius: 10px;
-    width: 700px;
+    width: 580px;
+    margin: auto;
 }
 
 .side{
@@ -63,8 +66,6 @@ select{
     border: unset;
 }
 
-
-
 textarea{
     width: 100%;
     margin-left: 20px;
@@ -85,11 +86,7 @@ input[type="submit"] {
 
 .detail-submit{
     text-align: center;
-
 }
-
-
-
 
 .end {
     padding: 30px;
