@@ -2,7 +2,7 @@
 
 
 @section('content')
-<div class="main">
+<div class="add-main">
     <div class="side">
         <div class="headline">
         商品管理システム

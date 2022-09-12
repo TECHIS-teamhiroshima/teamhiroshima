@@ -74,3 +74,6 @@ button:after {
 button:hover:after{
     right: 1em;
 }
+.main-container {
+    width: 90%;
+}

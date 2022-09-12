@@ -3,93 +3,12 @@ url("https://fonts.googleapis.com/css?family=Sacramento");
 @import
 url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
 
-
-/*
-
-
-
-table {
-
-    border-collapse: collapse;
-    letter-spacing: 1px;
-    font-size: 0.8rem;
-    background-color: rgb(255, 255, 255);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
-    border: 2px #212529 solid;
-    border-radius: 10px;
-}
-
-
-.add-yohaku {
-    text-align: left;
-    padding-left: 30px;
-}
-
-table
-td,
-table
-th {
-    border: 1px #181819 solid;
-    padding: 10px 5px;
-    font-size: 0.8rem;
-}
-
-th {
-    background-color: rgb(103, 225, 241);
-}
-
-.add-title {
-    background-color: rgb(255, 255, 255);
-    padding: 20px 1px 1px 60px;
-    /* font-family: 'Dancing Script', cursive;
-}
-
-td {
-    text-align: center;
-}
-
-tr:nth-child(even) td {
-    background-color: rgb(255, 255, 255);
-}
-
-tr:nth-child(odd) td {
-    background-color: rgb(255, 255, 255);
-}
-
-.heman {
-    font: 1.0rem molot;
-    text-align: left;
-    padding: 5px 5px 260px 30px;
-    background-color: #fff;
-    border-right: solid;
-}
-
-.skeletor {
-    font: 0.9rem rapscallion;
-    letter-spacing: 3px;
-    text-shadow: 1px 1px 0 #fff, 0 0 9px #000;
-    text-align: center;
-    border-right: solid;
-}
-
-.yohaku {
-    background-color: #fff;
-    border-right: solid;
-}
-
-
-.side-reft{
+.add-main{
     display: flex;
-} */
-
-/*  div.ver */
-
-.main{
     border: 1px #181819 solid;
     border-radius: 10px;
     width: 580px;
+    margin: auto;
 }
 
 .side{

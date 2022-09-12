@@ -14,7 +14,7 @@
         <div class="main-content">
             <div class="page-title">
                 <h2>商品一覧画面</h2>
-                <a href="">商品登録画面</a>
+                <a href="{{ url('/add') }}">商品登録画面</a>
             </div>
             <div class="item-table">
                 <table class="table">
