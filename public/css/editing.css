@@ -1,8 +1,12 @@
-.main {
+.editing-main {
     width: 800px;
+    display: flex;
+    margin: auto;
+    border: 1px solid;
 }
-.side-content{
+.editing-side-content{
     width: 250px;
+    border-right: 1px solid;
 }
 .page-title {
     margin-left: 20px;

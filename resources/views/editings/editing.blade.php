@@ -2,8 +2,8 @@
 
 @section('content')
 <body>
-    <div class="main">
-        <div class="side-content">
+    <div class="editing-main">
+        <div class="editing-side-content">
                 <div class="side-title">
                     <h5>商品管理シテム</h5>
                 </div>
