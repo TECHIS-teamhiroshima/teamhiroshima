@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="{{ asset('css/productlist.css') }}">
     <link rel="stylesheet" href="{{ asset('css/home.css') }}">
     <link rel="stylesheet" href="{{ asset('css/editing.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/add.css') }}">
 </head>
 <body>
     <div id="app">
