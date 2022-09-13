@@ -1,0 +1,55 @@
+.main-top{
+    background-color: aqua;
+    border: 1px #181819 solid;
+    border-radius: 10px;
+    width: 700px;
+    margin: auto;
+
+}
+
+.image{
+    border: 1px #181819 solid;
+    width: 200px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+a:hover{
+ color: rgb(229, 245, 9);
+ text-decoration: none;
+}
+
+.contenr-text{
+    border: 1px #181819 solid;
+    width: 200px;
+    margin: auto;
+
+
+}
+
+.top-top{
+        display: flex;
+
+}
+
+.detail-main{
+    display: flex;
+}
+
+.image{
+    margin: auto;
+    width: 300px;
+    height: 300px;
+}
+
+#lightbox .lb-container { padding: 0px; }
+#lightbox .lb-outerContainer { padding: 6px; }
+
+
+.detail-detail{
+    margin: auto;
+    width: 300px;
+    height: 300px;
+
+}
+

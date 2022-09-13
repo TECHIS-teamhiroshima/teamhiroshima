@@ -1,0 +1,50 @@
+.main{
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    border: 1px solid;
+}
+
+.main-content {
+    width: 1000px;
+    margin: 10px auto;
+}
+
+.side-content {
+    border-right: 1px solid;
+}
+.side-title h5 {
+    background-color: aquamarine;
+    padding: 10px 10px;
+}
+
+.side-menu {
+    margin-left: 10px;
+}
+
+.side-menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.page-title {
+    display: flex;
+}
+
+.page-title a {
+    margin: 0 0 0 auto;
+}
+
+.title,h2 {
+    color: rgb(31, 31, 33);
+}
+
+.tr,th,td {
+    border: solid 1px;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
