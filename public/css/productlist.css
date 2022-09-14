@@ -2,7 +2,11 @@
     display: flex;
     max-width: 1200px;
     margin: auto;
+<<<<<<< HEAD
     border: solid 1px;
+=======
+    border: 1px solid;
+>>>>>>> d926190a156b5e4adb5e99bf6efea871ae8e8423
 }
 
 .main-content {
@@ -11,12 +15,29 @@
 }
 
 .side-content {
+<<<<<<< HEAD
     padding: 10px 0;
     border-right: solid 1px;
 }
 
 .side-menu {
     margin-top: 20px;
+=======
+    border-right: 1px solid;
+}
+.side-title h5 {
+    background-color: aquamarine;
+    padding: 10px 10px;
+}
+
+.side-menu {
+    margin-left: 10px;
+}
+
+.side-menu a {
+    text-decoration: none;
+    color: black;
+>>>>>>> d926190a156b5e4adb5e99bf6efea871ae8e8423
 }
 
 .page-title {
@@ -33,5 +54,10 @@
 
 .tr,th,td {
     border: solid 1px;
+    text-decoration: none;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}

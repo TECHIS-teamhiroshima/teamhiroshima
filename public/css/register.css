@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Sacramento");
+/* @import url("https://fonts.googleapis.com/css?family=Sacramento");
 
 
 caption {
@@ -52,7 +52,7 @@ th {
     background-color: rgb(255, 255, 255);
     padding: 20px 1px 1px 60px;
     /* font-family: 'Dancing Script', cursive; */
-}
+/* }
 
 td {
     text-align: center;
@@ -90,4 +90,28 @@ tr:nth-child(odd) td {
 
 .side-reft{
     display: flex;
+} */ */
+
+
+/* caption {
+    padding: 30px;
+    caption-side: bottom;
+    font-size: 5rem;
+    text-align: center;
+    font-family: "Sacramento", cursive;
+    color: rgb(253, 0, 0);
+    text-shadow: 1px 1px 0 #fff, 0 0 9px #000;
+
+} */
+
+
+.end {
+    padding: 30px;
+    caption-side: bottom;
+    font-size: 5rem;
+    text-align: center;
+    font-family: "Sacramento", cursive;
+    color: rgb(253, 0, 0);
+    text-shadow: 1px 1px 0 #fff, 0 0 9px #000;
 }
+
