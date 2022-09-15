@@ -2,7 +2,7 @@
     display: flex;
     max-width: 1200px;
     margin: auto;
-    border: 1px solid;
+    border: solid 1px;
 }
 
 .main-content {
