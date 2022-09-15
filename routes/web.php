@@ -18,9 +18,11 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-feature-update-setting
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
 Route::get('/items', [App\Http\Controllers\ItemController::class, 'items']);
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-main
+Route::get('/editing', [App\Http\Controllers\EditingScreenController::class, 'editing'])->name('editing');
+Route::get('/add', [App\Http\Controllers\AddController::class, 'add'])->name('add');
+Route::get('/detail', [App\Http\Controllers\DetailController::class, 'detail'])->name('detail');
+Route::post('/add', 'addController@create');
+Route::post('/add', [App\Http\Controllers\AddController::class, 'store']);
+Route::delete('item/{item}', [\App\Http\Controllers\AddController::class, 'destroy']);
