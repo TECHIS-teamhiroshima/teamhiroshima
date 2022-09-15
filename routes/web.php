@@ -24,5 +24,5 @@ Route::get('/editing', [App\Http\Controllers\EditingScreenController::class, 'ed
 Route::get('/add', [App\Http\Controllers\AddController::class, 'add'])->name('add');
 Route::get('/detail', [App\Http\Controllers\DetailController::class, 'detail'])->name('detail');
 Route::post('/add', 'addController@create');
-Route::post('/add', [App\Http\Controllers\AddController::class, 'store']);
-Route::delete('item/{item}', [\App\Http\Controllers\AddController::class, 'destroy']);
+Route::post('/add', [App\Http\Controllers\ItemController::class, 'store']);
+Route::delete('item/{item}', [\App\Http\Controllers\ItemController::class, 'destroy']);
