@@ -4,8 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-
-use App\Models\item;
+use App\Models\add;
 
 class AddController extends Controller
 {
