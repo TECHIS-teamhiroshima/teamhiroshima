@@ -30,7 +30,7 @@
                 <h6 class="text-serd">詳 細</h6>
                 <textarea name="detail" rows="5" cols="40" placeholder="詳細を入力してください"></textarea>
                     <br>
-                <!-- <input class="sbt" type="submit" value="登 録" > -->
+                <input class="sbt" type="submit" value="登 録" >
                 <button type="submit">送信</button>
             </div>
             </div>
