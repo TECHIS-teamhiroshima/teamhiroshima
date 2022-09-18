@@ -18,11 +18,13 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/items', [App\Http\Controllers\ItemController::class, 'items']);
-Route::get('/editing', [App\Http\Controllers\EditingScreenController::class, 'editing'])->name('editing');
-Route::get('/add', [App\Http\Controllers\AddController::class, 'add'])->name('add');
-Route::get('/detail', [App\Http\Controllers\DetailController::class, 'detail'])->name('detail');
-Route::post('/add', 'addController@create');
-Route::post('/add', [App\Http\Controllers\ItemController::class, 'store']);
-Route::delete('item/{item}', [\App\Http\Controllers\ItemController::class, 'destroy']);
+ Route::group(['middleware' => ['auth']], function () {
+  Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+  Route::get('/items', [App\Http\Controllers\ItemController::class, 'items']);
+  Route::get('/editing', [App\Http\Controllers\EditingScreenController::class, 'editing'])->name('editing');
+  Route::get('/add', [App\Http\Controllers\AddController::class, 'add'])->name('add');
+  Route::get('/detail', [App\Http\Controllers\DetailController::class, 'detail'])->name('detail');
+  Route::post('/add', 'addController@create');
+  Route::post('/add', [App\Http\Controllers\ItemController::class, 'store']);
+  Route::delete('item/{item}', [\App\Http\Controllers\ItemController::class, 'destroy']);
+ });

@@ -75,5 +75,4 @@
         </div>
     </div>
 </div>
-<div class="end">new item</div>
 @endsection

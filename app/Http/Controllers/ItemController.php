@@ -18,6 +18,7 @@ class ItemController extends Controller
             'items' => $items,
         ]);
     }
+
     //アイテム登録
     public function store(Request $request)
     {
@@ -43,3 +44,4 @@ class ItemController extends Controller
         return redirect('/items');
     }
 }
+
