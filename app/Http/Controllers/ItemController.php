@@ -27,9 +27,9 @@ class ItemController extends Controller
 
         //アイテム作成
         item::create([
-            'user_id' => Auth::id(),
+            'user_id' => $request->user_id,
             'name' => $request->name,
-            'status' => "1",
+            'status' =>  "1",
             'type' => $request->type,
             'detail' => $request->detail
         ]);
