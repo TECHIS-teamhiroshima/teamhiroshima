@@ -2,6 +2,9 @@
 
 
 @section('content')
+<!-- バリエーションエラーの表示 -->
+@include('common.errors')
+
 <div class="add-main">
     <div class="side">
         <div class="headline">
@@ -14,15 +17,16 @@
         </div>
     </div>
     <form action="/add" method="POST">
+        <input type="hidden" name="user_id" value="{{ $user_id }}">
         <div class="rigth">
             <h6 class="text-top">名 前</h6>
-                <input type="string" name="name" placeholder="商品名を入力してください">
+                <input type="text" name="name" placeholder="商品名を入力してください">
             <h6>種 別</h6>
-                <input type="smallInteger" name="type" placeholder="詳細を入力してください" list="syubetu">
+                <input type="text" name="type" placeholder="詳細を入力してください" list="syubetu">
                     <datalist id="syubetu" >
-                        <option value="靴"></option>
-                        <option value="服"></option>
-                        <option value="アクセサリ"></option>
+                        <option value="1">靴</option>
+                        <option value="2">服</option>
+                        <option value="3">アクセサリ</option>
                     </datalist>
             <h6>詳 細</h6>
                     <textarea name="detail-text" rows="10" cols="55" placeholder="詳細を入力してください"></textarea> </textarea>
@@ -85,7 +89,8 @@
                                 }
                                 </script>
                             </form>
-
+                    <textarea name="detail" rows="10" cols="55" placeholder="詳細を入力してください"></textarea>
+                <br>
                     <div class="detail-submit">
                         {{ csrf_field() }}
                         <button type="submit" class="button-hover"></button>

@@ -32,7 +32,15 @@
                             <td>{{ $item->id }}</td>
                             <td>{{ $item->name }}</td>
                             <td>{{ $item->type }}</td>
-                            <td><a href="{{ url('/editing') }}">{{ $item->detail }}</a></td>
+                            <td class="test"><a href="{{ url('/editing') }}">{{ $item->detail }}</a>
+                        <!-- TODO: 削除ボタン -->
+                        <form action="{{ url('item/'.$item->id) }}" method="POST">
+                            {{ csrf_field() }}
+                            {{ method_field('DELETE') }}
+
+                            <button type="submit" id="delete-item-{{ $item->id }}" class="btn btn-danger">削除</button>
+                        </form>
+                        </td>
                         </tr>
                     @endforeach
                     </tbody>
