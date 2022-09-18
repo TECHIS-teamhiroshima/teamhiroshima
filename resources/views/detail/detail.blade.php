@@ -22,10 +22,10 @@
             </div>
             <div class="detail-content">
                 <div class="content-title">
-                    <label for="title">本文</label>
+                    <label for="title">{{$items->name}}</label>
                 </div>
                 <div class="content-text">
-                    <label for="text">本文</label>
+                    <label for="text">{{$items->detail}</label>
                 </div>
             </div>
         </div>

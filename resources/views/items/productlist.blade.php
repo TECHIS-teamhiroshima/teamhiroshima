@@ -23,7 +23,7 @@
                         <th>ID</th>
                         <th>名前</th>
                         <th>種別</th>
-                        <th><a href="{{ url('/detail') }}">詳細</a></th>
+                        <th>詳細</th>
                     </tr>
                     </thead>
                     <tbody id="tbl">
@@ -32,15 +32,26 @@
                             <td>{{ $item->id }}</td>
                             <td>{{ $item->name }}</td>
                             <td>{{ $item->type }}</td>
-                            <td class="test"><a href="{{ url('/editing') }}">{{ $item->detail }}</a>
-                        <!-- TODO: 削除ボタン -->
-                        <form action="{{ url('item/'.$item->id) }}" method="POST">
-                            {{ csrf_field() }}
-                            {{ method_field('DELETE') }}
-
-                            <button type="submit" id="delete-item-{{ $item->id }}" class="btn btn-danger">削除</button>
-                        </form>
-                        </td>
+                            <td class="test">
+                                <span class="span-deteil">
+                                {{-- 詳細 --}}
+                                    <form action="{{ url('detail/'.$item->id) }}" method="POST">
+                                        <button class="button-detail">{{ $item->detail }}</button>
+                                    </form>
+                                </span>
+                                <span class="span-opertion">
+                                {{-- 編集 --}}
+                                    <form action="{{ url('edeiting/'.$item->id) }}" method="POST">
+                                        <button class="button-hover-editing"></button>
+                                    </form>
+                                {{-- 削除 --}}
+                                    <form action="{{ url('item/'.$item->id) }}" method="POST">
+                                        {{ csrf_field() }}
+                                        {{ method_field('DELETE') }}
+                                        <button class="button-delete" type="submit" id="delete-item-{{ $item->id }}" class="btn btn-danger">削除</button>
+                                    </form>
+                                </span>
+                            </td>
                         </tr>
                     @endforeach
                     </tbody>

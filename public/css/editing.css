@@ -37,7 +37,7 @@ button{
     border-radius: 0;
     outline: none;
 }
-button {
+button.send {
     position: relative;
     display: block;
     padding: 1em 2em 1em 1em;
@@ -51,11 +51,9 @@ button {
     text-indent: 0.1em;
     letter-spacing: 0.1em;
     border-radius: 1.5em;
-
-
 }
 
-button:after {
+button.send:after {
     content: "";
     position: absolute;
     top: 0;
@@ -71,7 +69,7 @@ button:after {
     transition: right 0.5s;
     }
 
-button:hover:after{
+button.send:hover:after{
     right: 1em;
 }
 .main-container {

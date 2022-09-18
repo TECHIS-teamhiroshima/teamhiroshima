@@ -3,6 +3,9 @@
     max-width: 1200px;
     margin: auto;
     border: solid 1px;
+    font-family:none;
+    font-size: none;
+    text-decoration: none;
 }
 
 .main-content {
@@ -40,12 +43,12 @@
 }
 
 .test {
-    display: flex;
     border-top: none;
-    border-left:  none;
+    border-left: none;
 }
+
 .test form {
-    margin: 0 0 0 auto;
+    margin: auto;
     color: brown;
 }
 
@@ -54,7 +57,59 @@
     text-decoration: none;
 }
 
-a {
+.td-detail{
+        border: solid 1px;
     text-decoration: none;
-    color: black;
+    border-right:  none;
+}
+
+.span-detail{
+    float: left;
+    text-decoration: none;
+}
+
+.button-detail{
+    width: max-content;
+    display:flex;
+    margin: none;
+    outline: none;
+    line-height:1.6;
+}
+
+.span-opertion{
+    display:flex;
+    float: right;
+}
+
+.button-hover-editing {
+    font-family: 'Reggae One', cursive;
+    border-radius: 0.3em;
+    background: linear-gradient(to right, #5bbee5, #52ddae);
+    display:block;
+    font-size: 17px;
+    color:#fff;
+    margin: 0px 5px;
+    padding:0px 20px;
+}
+
+.button-hover-editing:before {
+    content: "編集";
+    font-size: 17px;
+    color: #fff;
+    display:block;
+}
+.button-hover-editing:hover:before {
+    content: "edit";
+
+}
+
+.button-delete {
+    font-family: 'Reggae One', cursive;
+    border-radius: 0.3em;
+    font-size: 17px;
+    color:#fff;
+    background: linear-gradient(to top, #444747, #fa0505);
+    display:block;
+    margin: 0px 5px;
+    padding:0px 20px;
 }
