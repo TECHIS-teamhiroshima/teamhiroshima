@@ -18,6 +18,13 @@
         <style>
             body {
                 font-family: 'Nunito', sans-serif;
+                width: 100%;
+                height:100vh;
+                background-image: url(../images/4317917_m.jpg);  
+                background-position: center center; 
+                background-repeat: no-repeat;  
+                background-attachment: fixed; 
+                background-size: cover;
             }
         </style>
     </head>
@@ -36,8 +43,9 @@
                     @endauth
                 </div>
             @endif
-            <div class="top-title">
-                <h1 style="color:#111; background-color: bisque;">aaa</h1>
+            <div class="top-title" style="background-image: url('{{ asset('image/back.png')}}');">
+                <!--<img src="{{ asset('image/back.png') }}" alt="">-->
+                <h1 style="color:#111; text-align: center;">TEAMHIROSHIMA<br>商品管理システム</h1>
             </div>
             <!-- <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
@@ -130,6 +138,8 @@
                     </div>
                 </div>
             </div> -->
+            
+        </div>
         </div>
     </body>
 </html>
