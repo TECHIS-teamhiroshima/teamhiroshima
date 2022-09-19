@@ -32,7 +32,7 @@ class ItemController extends Controller
             'name' => $request->name,
             'status' => $request->status,
             'type' => $request->type,
-            'detail' => $request->detail
+            'detail' => $request->detail,
         ]);
 
             return redirect('/items');
@@ -43,5 +43,14 @@ class ItemController extends Controller
         $item->delete();
         return redirect('/items');
     }
-}
 
+
+    /**
+     * 詳細画面の表示
+     */
+    public function detail(Request $request)
+    {
+        $id = $request->id;
+        return view('items.detail', compact('item'));
+    }
+}

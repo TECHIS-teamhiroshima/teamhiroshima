@@ -90,6 +90,8 @@
                                 }
                                 </script>
                             </form>
+                    <textarea name="detail" rows="10" cols="55" placeholder="詳細を入力してください"></textarea>
+                <br>
                     <div class="detail-submit">
                         {{ csrf_field() }}
                         <button type="submit" class="button-hover"></button>

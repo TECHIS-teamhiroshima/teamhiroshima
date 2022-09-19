@@ -31,7 +31,7 @@
                 <textarea name="detail" rows="5" cols="40" placeholder="詳細を入力してください"></textarea>
                     <br>
                 <input class="sbt" type="submit" value="登 録" >
-                <button type="submit">送信</button>
+                <button class="send" type="submit">送信</button>
             </div>
             </div>
         </div>

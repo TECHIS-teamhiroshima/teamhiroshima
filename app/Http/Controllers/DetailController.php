@@ -14,10 +14,5 @@ class DetailController extends Controller
     }
 
 
-public function store(Request $request)
-{
-    $document = $request->document;
-    // 画像を"storage/app/public"に保存
-    $document->store('public');
-}
+
 }
