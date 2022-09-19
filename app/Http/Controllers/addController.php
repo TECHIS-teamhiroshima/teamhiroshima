@@ -15,6 +15,7 @@ class AddController extends Controller
     public function add()
     {
         $id=  Auth::id();
+        dd($id);
         return view('add.add', [
             "user_id" => $id,
             "status" => 'active',
