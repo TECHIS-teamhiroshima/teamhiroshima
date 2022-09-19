@@ -7,13 +7,19 @@
         <div class="menu-content">
             <ul>
                 <li>
-                  <a href="/home">ホーム</a>
+                    <a href="/register">Register</a>
                 </li>
                 <li>
-                    <a href="/items">一覧</a>
+                    <a href="/login">Login</a>
                 </li>
                 <li>
-                    <a href="/add">登録</a>
+                  <a href="/home">Home</a>
+                </li>
+                <li>
+                    <a href="/items">Productlist</a>
+                </li>
+                <li>
+                    <a href="/add">Add</a>
                 </li>
             </ul>
         </div>
