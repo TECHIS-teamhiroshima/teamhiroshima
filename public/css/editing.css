@@ -1,18 +1,21 @@
 .editing-main {
-    width: 800px;
+    max-width: 750px;
     display: flex;
     margin: auto;
     border: 1px solid;
+    padding: auto;
 }
 .editing-side-content{
-    width: 250px;
+    width: 300px;
     border-right: 1px solid;
 }
 .page-title {
     margin-left: 20px;
+    display: block;
 }
 .page-title a {
     margin-right: 20px;
+    width: 300px;
 }
 .rigth {
     margin-left: 20px;
@@ -28,6 +31,31 @@
     margin: 0;
     margin-top: 10px;
 }
+.form-horizontal2{
+    width: auto;
+    margin: 10px 30px 10px 10px;
+}
+
+.form-control1{
+    width: auto;
+}
+
+.form-control2{
+    width: auto;
+
+}
+
+.form-control3{
+    width: 450px;
+    height: 150px;
+    white-space : pre-wrap;
+    word-break: break-all;
+    border-radius: 1.5em;
+    padding: 10px;
+    margin: 0px;
+}
+
+
 button{
     appearance: none;
     margin: 0;
@@ -45,7 +73,7 @@ button.send {
     font-size: 14px;
     color: #fff;
     text-align: center;
-        line-height: 1;
+    line-height: 1;
     background: #5bbee5;
     background: linear-gradient(to right, #5bbee5, #52ddae);
     text-indent: 0.1em;
@@ -73,5 +101,5 @@ button.send:hover:after{
     right: 1em;
 }
 .main-container {
-    width: 90%;
+    width: auto;
 }

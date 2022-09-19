@@ -12,7 +12,7 @@
                 </div>
         </div>
         <div class="main-content">
-            <div class="page-title">
+            <div class="list-page-title">
                 <h2>商品一覧画面</h2>
                 <a href="{{ url('/add') }}">商品登録画面</a>
             </div>
@@ -35,15 +35,13 @@
                             <td class="test">
                                 <span class="span-deteil">
                                 {{-- 詳細 --}}
-                                    <form action="{{ url('detail/'.$item->id) }}" method="POST">
-                                        <button class="button-detail">{{ $item->detail }}</button>
-                                    </form>
+                                <p class="omit">
+                                    <a class="omit-a" href="/detail/{{$item->id}}">{{$item->detail}}</a>
+                                </p>
                                 </span>
                                 <span class="span-opertion">
                                 {{-- 編集 --}}
-                                    <form action="{{ url('edeiting/'.$item->id) }}" method="POST">
-                                        <button class="button-hover-editing"></button>
-                                    </form>
+                                    <a class="button-hover-editing" href="/editing/{{$item->id}}"></a>
                                 {{-- 削除 --}}
                                     <form action="{{ url('item/'.$item->id) }}" method="POST">
                                         {{ csrf_field() }}

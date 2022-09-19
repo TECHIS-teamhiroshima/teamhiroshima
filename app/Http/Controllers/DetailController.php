@@ -12,7 +12,4 @@ class DetailController extends Controller
     {
         return view('detail.detail');
     }
-
-
-
 }

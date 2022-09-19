@@ -1,6 +1,6 @@
 .main{
     display: flex;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: auto;
     border: solid 1px;
     font-family:none;
@@ -9,12 +9,14 @@
 }
 
 .main-content {
-    width: 1000px;
+    min-width: 700px;
+    width: auto;
     margin: 10px auto;
 }
 
 .side-content {
     border-right: 1px solid;
+    min-width: 150px;
 }
 .side-title h5 {
     background-color: aquamarine;
@@ -30,12 +32,15 @@
     color: black;
 }
 
-.page-title {
-    display: flex;
+.list-page-title {
+    display:flex ;
+    margin: 10px;
 }
 
-.page-title a {
-    margin: 0 0 0 auto;
+.list-page-title a {
+    margin: auto;
+    text-decoration: none;
+    padding-bottom: 10px ;
 }
 
 .title,h2 {
@@ -55,10 +60,15 @@
 .tr,th,td {
     border: solid 1px;
     text-decoration: none;
+    min-width:30px ;
+}
+
+th{
+    text-align: center;
 }
 
 .td-detail{
-        border: solid 1px;
+    border: solid 1px;
     text-decoration: none;
     border-right:  none;
 }
@@ -68,12 +78,17 @@
     text-decoration: none;
 }
 
-.button-detail{
-    width: max-content;
-    display:flex;
-    margin: none;
-    outline: none;
-    line-height:1.6;
+.omit{
+    text-decoration: none;
+    width: 290px; /* 省略せずに表示するサイズを指定 */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.omit-a{
+    text-decoration: none;
+    color: #0d0d0d;
 }
 
 .span-opertion{
@@ -82,6 +97,7 @@
 }
 
 .button-hover-editing {
+    text-decoration: none;
     font-family: 'Reggae One', cursive;
     border-radius: 0.3em;
     background: linear-gradient(to right, #5bbee5, #52ddae);
@@ -100,7 +116,6 @@
 }
 .button-hover-editing:hover:before {
     content: "edit";
-
 }
 
 .button-delete {
@@ -113,3 +128,4 @@
     margin: 0px 5px;
     padding:0px 20px;
 }
+

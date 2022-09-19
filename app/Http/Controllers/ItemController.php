@@ -38,9 +38,9 @@ class ItemController extends Controller
             return redirect('/items');
         }
     //アイテム削除
-    public function destroy(Request $request, item $item)
+    public function destroy(Request $request, item $id)
     {
-        $item->delete();
+        $id->delete();
         return redirect('/items');
     }
 
@@ -48,9 +48,19 @@ class ItemController extends Controller
     /**
      * 詳細画面の表示
      */
-    public function detail(Request $request)
+    public function detail($id)
     {
-        $id = $request->id;
-        return view('items.detail', compact('item'));
+        $item = Item::where('id', $id)->first();
+        return view('detail.detail', compact('item'));
     }
+
+    /**
+     * 編集画面の表示
+     */
+    public function editing($id)
+    {
+        $items = Item::find($id);
+        return view('editing.editing')->with('item', $items);
+    }
+
 }
