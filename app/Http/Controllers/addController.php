@@ -14,7 +14,7 @@ class AddController extends Controller
 {
     public function add()
     {
-        $id=  Auth::id();
+        $id =  Auth::id();
         return view('add.add', [
             "user_id" => $id,
         ]);
