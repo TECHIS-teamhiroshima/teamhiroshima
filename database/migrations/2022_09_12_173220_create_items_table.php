@@ -20,7 +20,7 @@ class CreateItemsTable extends Migration
             $table->string('status', 100);
             $table->smallInteger('type');
             $table->string('detail', 500);
-            $table->string('img_path');
+            $table->string('img_path')->nullable();
             $table->timestamps();
 
         });
