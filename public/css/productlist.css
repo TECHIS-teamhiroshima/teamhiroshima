@@ -2,7 +2,7 @@
     display: flex;
     max-width: 1200px;
     margin: auto;
-    border: 1px solid;
+    border: solid 1px;
 }
 
 .main-content {
@@ -37,6 +37,16 @@
 
 .title,h2 {
     color: rgb(31, 31, 33);
+}
+
+.test {
+    display: flex;
+    border-top: none;
+    border-left:  none;
+}
+.test form {
+    margin: 0 0 0 auto;
+    color: brown;
 }
 
 .tr,th,td {

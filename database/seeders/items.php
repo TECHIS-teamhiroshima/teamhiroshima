@@ -25,7 +25,7 @@ class items extends Seeder
         ]);
 
         DB::table('items')->insert([
-            'user_id' => '2',
+            'user_id' => '1',
             'name' => 'jiro',
             'type' => '2',
             'detail' => 'bbbbbbbbb',
