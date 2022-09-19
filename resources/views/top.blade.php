@@ -6,7 +6,7 @@
 <body>
     @include("parts.header")
     <main>
-    
+
 	<h1>Stock Management</h1>
 
 

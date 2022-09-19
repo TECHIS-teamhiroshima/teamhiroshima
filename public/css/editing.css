@@ -100,6 +100,7 @@ button.send:after {
 button.send:hover:after{
     right: 1em;
 }
+
 .main-container {
     width: auto;
 }

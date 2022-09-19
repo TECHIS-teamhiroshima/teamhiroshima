@@ -103,4 +103,5 @@
     <marquee behavior="alternate" direction="up"><marquee direction="left">new item</marquee></marquee>
 </div>
 @endsection
+@include("parts.footer")
 

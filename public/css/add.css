@@ -11,8 +11,8 @@ url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
     margin: auto;
     height: auto;
     background-image: repeating-linear-gradient(-50deg, #f21c1c, #f21c1c 30px, transparent 30px, transparent 32px, #f21c1c 32px), repeating-linear-gradient(40deg, #f21c1c, #f21c1c 30px, transparent 30px, transparent 32px, #f21c1c 32px), repeating-linear-gradient(130deg, #f21c1c, #f21c1c 30px, transparent 30px, transparent 32px, #f21c1c 32px), repeating-linear-gradient(220deg, #f21c1c, #f21c1c 30px, transparent 30px, transparent 32px, #f21c1c 32px);
-    background-size: 5px 100%, 100% 5px, 5px 100% , 100% 5px;
-    background-position: 0 0, 0 0, 100% 0, 0 100%;
+    background-size: 5px auto, auto 5px, 5px auto , auto 5px;
+    background-position: 0 100%, 100% 0, 100% 0, 0 100%;
     background-repeat: no-repeat;
     background-color: rgba( 0, 109, 217, 0.2 );
 }
@@ -21,7 +21,7 @@ url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
     width: 170px;
     background-image: repeating-linear-gradient(-50deg, #f21c1c, #f21c1c 30px, transparent 30px, transparent 32px, #f21c1c 32px), repeating-linear-gradient(40deg, #f21c1c, #f21c1c 30px, transparent 30px, transparent 32px, #f21c1c 32px), repeating-linear-gradient(130deg, #f21c1c, #f21c1c 30px, transparent 30px, transparent 32px, #f21c1c 32px), repeating-linear-gradient(220deg, #f21c1c, #f21c1c 30px, transparent 30px, transparent 32px, #f21c1c 32px);
     background-size: 0px 100%, 100% 0px, 3.5px 100% , 100% 0px;
-    background-position: 0 0, 0 0, 100% 0, 0 100%;
+    background-position: 100% 0, 0 100%, 100% 0, 0 100%;
     background-repeat: no-repeat;
 
 }
@@ -42,7 +42,7 @@ url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
     text-decoration: none;
     width: auto;
     display: flex;
-    height: max-content;
+    height: auto;
     padding:  10px 10px 10px 15px;
     font-size: large;
     margin: 20px;
@@ -85,7 +85,6 @@ select{
     border-radius: 10px;
     box-shadow: 1px 1px 0.5px rgb(14, 13, 13) inset;
     margin: 20px;
-
 }
 
 textarea{

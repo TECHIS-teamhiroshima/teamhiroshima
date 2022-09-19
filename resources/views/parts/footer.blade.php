@@ -1,3 +1,3 @@
 <footer>
-	&copy; teamHIROSHIMA
+	&copy; TeamHiroshima
 </footer>
