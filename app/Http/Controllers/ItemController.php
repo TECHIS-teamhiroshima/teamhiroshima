@@ -30,7 +30,7 @@ class ItemController extends Controller
         item::create([
             'user_id' => $request->user_id,
             'name' => $request->name,
-            'status' =>  "1",
+            'status' => $request->status,
             'type' => $request->type,
             'detail' => $request->detail,
         ]);
