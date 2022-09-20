@@ -2,35 +2,37 @@
 
 @section('content')
 
-
 <body>
     <div class="main-top">
-        <div class="top-top">
-            <h2>商品詳細</h2>
-                <a href="productlist" rel="nofollow""">戻る</a>
+        <div class="detail-top">
+            <div class="name">
+                <p>商品詳細</p>
+            </div>
+                <p class="detail-productlist">
+                    <a class="return" href="{{ url('/items') }}"></a>
+                </p>
         </div>
-            <div class="detail-main">
-                <div class="image">
-                    <a href="はてな.jpg" data-lightbox="abc" data-title="拡大イメージ">
-                    <img src="はてな.jpg" alt=イメージ写真">
-                    </a>
-                    <div>
-                        <a href="edit">編集</a>
-                    </div>
+        <div class="detail-main">
+            <a href="{{ asset('image/はてな.jpeg') }}" data-lightbox="group" class="image_box hover_2">
+            <div class="img_wrap">
+                <img src="{{ asset('image/はてな.jpeg') }}" alt="hatena" width="300">
+            </div></a>
+            <div class="detail-content">
+                <div class="content-title">
+                    <label for="title">{{$item->name}}</label>
                 </div>
                 <div class="content-text">
-                        <label for="text">本文</label>
-                        {{-- <textarea class="form-control" rows="10" name="memo">{{ $memo->memo }}</textarea> --}}
+                    <p for="text">{{$item->detail}}</p>
                 </div>
             </div>
-        <div class="page-title">
-            <div class="detail-detail">
-            </div>
         </div>
+            <a class="detail-editing" href="/editing/{{$item->id}}"></a>
     </div>
 
-<script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
-
 </body>
+
+<div class="end">
+    <marquee behavior="alternate" direction="up"><marquee direction="left">Detil </marquee></marquee>
+</div>
+
 @endsection

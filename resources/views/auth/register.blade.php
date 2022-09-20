@@ -75,5 +75,6 @@
         </div>
     </div>
 </div>
-<div class="end">new item</div>
+@include("parts.footer")
 @endsection
+

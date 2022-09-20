@@ -1,55 +1,152 @@
+
+
 .main-top{
-    background-color: aqua;
-    border: 1px #181819 solid;
+    border: 3px dotted red;
     border-radius: 10px;
+    max-width: 700px;
+    max-height: 700px;
     width: 700px;
+    height: 650px;
     margin: auto;
-
 }
 
-.image{
-    border: 1px #181819 solid;
-    width: 200px;
+.detail-top{
+    display: flex;
+}
+
+.name {
+    width:400px;
+    margin: 20px 20px 20px 40px;
+}
+
+.name p {
+    font-size:45px;
+    text-align: left;
+    margin:auto;
+    position: relative;
+    font-family:  'Reggae One', cursive;
+    font-style: normal;
+    background-image: linear-gradient(
+    5deg,
+    rgba(0, 0, 0, 0.3)  45%,
+    rgb(14, 14, 13) 50%,
+    rgba(0, 0, 0, 0.3) 55%
+    );
+    background-size: 500% 100%;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: shine 4s infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.detail-productlist {
     margin: auto;
+    font-size:20px;
+}
+
+.return{
+    text-decoration: none;
+    font-family: 'Reggae One', cursive;
+    border-radius: 1em;
+    background: linear-gradient(to right, #5bbee5, #52ddae);
+    font-size: 20px;
+    color:#fff;
+    margin: auto;
+    padding:5px;
+}
+.return:before {
+    content: "戻る";
+    color: #fff;
+    margin: 30px 30px;
+    padding:5px;
+}
+.return:hover:before {
+    margin: 30px 30px;
+    padding:5px;
+    content: "return";
+}
+
+
+img{
     border-radius: 10px;
+    margin: 50px auto auto 30px;
+    max-width: 200px;
+    max-height: 150px;
+    height: auto;
 }
 
-a:hover{
- color: rgb(229, 245, 9);
- text-decoration: none;
+.image_box {
+    width: 350px;
+    display: block;
+}
+.hover_2 {
+    position: relative;
+}
+.hover_2 .img_wrap {
+    overflow: hidden;
+}
+.hover_2 .img_wrap img {
+    width: 100%;
+    transition: 1s;
+}
+.hover_2:hover .img_wrap img {
+    transform: scale(1.5) rotate(360deg);
 }
 
-.contenr-text{
+.content-title{
     border: 1px #181819 solid;
-    width: 200px;
-    margin: auto;
-
-
+    width: 400px;
+    margin: 0px 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
+    font-size: 20px;
 }
 
-.top-top{
-        display: flex;
-
+.content-text{
+    border: 1px solid;
+    max-width: 400px;
+    max-height: 400px;
+    height: 300px;
+    font-size: 17px;
+    margin: 0px 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
+    white-space : pre-wrap;
+    word-break: break-all
 }
+
 
 .detail-main{
     display: flex;
 }
 
-.image{
+.detail-editing {
+    text-decoration: none;
+    font-family: 'Reggae One', cursive;
+    border-radius: 0.3em;
+    background: linear-gradient(to right, #5bbee5, #52ddae);
+    font-size: 30px;
+    color:#fff;
     margin: auto;
-    width: 300px;
-    height: 300px;
+    padding:10px;
+    justify-content: center;
+    display: table;
 }
 
-#lightbox .lb-container { padding: 0px; }
-#lightbox .lb-outerContainer { padding: 6px; }
-
-
-.detail-detail{
-    margin: auto;
-    width: 300px;
-    height: 300px;
-
+.detail-editing:before {
+    content: "編集";
+    color: #fff;
+    margin: 30px 30px;
+    padding:20px;
 }
-
+.detail-editing:hover:before {
+    margin: 30px 30px;
+    padding:20px;
+    content: "edit";
+}
