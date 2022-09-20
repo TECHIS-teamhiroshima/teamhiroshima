@@ -14,6 +14,7 @@ class ItemController extends Controller
     public function items(Request $request)
     {
         $items = Item::orderBy('id', 'asc')->get();
+        dd($items);
         return view('items.productlist', [
             'items' => $items,
         ]);
