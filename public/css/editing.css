@@ -1,23 +1,31 @@
 .editing-main {
-    max-width: 750px;
+    max-width: 650px;
     display: flex;
     margin: auto;
     border: 1px solid;
-    padding: auto;
+}
+
+.editing-main-content{
+    width: 500px;
+}
+
+.side-menu{
+    width: 150px;
 }
 .editing-side-content{
-    width: 300px;
+    width: 150px;
     border-right: 1px solid;
 }
 .page-title {
-    margin-left: 20px;
-    display: block;
+    margin: 20px 0px 0px 40px;
+    display: flex;
 }
 .page-title a {
-    margin-right: 20px;
-    width: 300px;
+    margin: auto auto auto 90px;
+    padding-left: 50px;
 }
-.rigth {
+
+.editing-right {
     margin-left: 20px;
 }
 .text-top {
@@ -31,6 +39,7 @@
     margin: 0;
     margin-top: 10px;
 }
+
 .form-horizontal2{
     width: auto;
     margin: 10px 30px 10px 10px;
@@ -38,13 +47,14 @@
 
 .form-control1{
     width: auto;
-}
+        margin: 0px;
 
+}
 .form-control2{
     width: auto;
+        margin: 0px;
 
 }
-
 .form-control3{
     width: 450px;
     height: 150px;
@@ -54,7 +64,6 @@
     padding: 10px;
     margin: 0px;
 }
-
 
 button{
     appearance: none;
@@ -80,7 +89,6 @@ button.send {
     letter-spacing: 0.1em;
     border-radius: 1.5em;
 }
-
 button.send:after {
     content: "";
     position: absolute;
@@ -96,7 +104,6 @@ button.send:after {
     transform: rotate(45deg);
     transition: right 0.5s;
     }
-
 button.send:hover:after{
     right: 1em;
 }

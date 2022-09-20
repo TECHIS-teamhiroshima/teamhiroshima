@@ -27,7 +27,7 @@ Auth::routes();
     Route::delete('item/{id}', [\App\Http\Controllers\ItemController::class, 'destroy']);
     Route::get('/detail/{id}', [App\Http\Controllers\ItemController::class, 'detail'])->name('item.detail');
     Route::get('/editing/{id}', [App\Http\Controllers\ItemController::class, 'editing'])->name('item.editing');
-
     //edit,updateアクション
     Route::resource('/item', 'ItemsController', ['only' => ['create', 'store', 'detail', 'destroy', 'editing', 'update']]);
 });
+?>
