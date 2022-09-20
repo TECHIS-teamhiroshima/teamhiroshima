@@ -1,15 +1,13 @@
 
 
 .main-top{
-    background: linear-gradient(to top, #eef6ad, #f8faee);
-    border: 1px #181819 solid;
-    border: 1px dashed black;
     border: 3px dotted red;
     border-radius: 10px;
+    max-width: 700px;
+    max-height: 700px;
     width: 700px;
+    height: 650px;
     margin: auto;
-    font-family: 'Reggae One', cursive;
-
 }
 
 .detail-top{
@@ -18,18 +16,15 @@
 
 .name {
     width:400px;
-    margin: 20px 20px 20px 20px;
-
+    margin: 20px 20px 20px 40px;
 }
 
 .name p {
     font-size:45px;
     text-align: left;
-    margin:20px 0px 20px 10px;
-    color: rgb(0, 0, 0);
+    margin:auto;
     position: relative;
     font-family:  'Reggae One', cursive;
-    font-weight: 300;
     font-style: normal;
     background-image: linear-gradient(
     5deg,
@@ -38,7 +33,6 @@
     rgba(0, 0, 0, 0.3) 55%
     );
     background-size: 500% 100%;
-    background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     animation: shine 4s infinite;
@@ -53,42 +47,106 @@
   }
 }
 
-.detail-productlis{
-    margin: auto 20px auto auto;
+.detail-productlist {
+    margin: auto;
+    font-size:20px;
 }
 
-a:hover{
- color: rgb(229, 245, 9);
- text-decoration: none;
+.return{
+    text-decoration: none;
+    font-family: 'Reggae One', cursive;
+    border-radius: 1em;
+    background: linear-gradient(to right, #5bbee5, #52ddae);
+    font-size: 20px;
+    color:#fff;
+    margin: auto;
+    padding:5px;
+}
+.return:before {
+    content: "戻る";
+    color: #fff;
+    margin: 30px 30px;
+    padding:5px;
+}
+.return:hover:before {
+    margin: 30px 30px;
+    padding:5px;
+    content: "return";
 }
 
-.image{
-    border: 1px #181819 solid;
-    width: 000px;
-    margin: auto 20px;
+
+img{
     border-radius: 10px;
-    width: 300px;
-    height: 300px;
+    margin: 50px auto auto 30px;
+    max-width: 200px;
+    max-height: 150px;
+    height: auto;
+}
+
+.image_box {
+    width: 350px;
+    display: block;
+}
+.hover_2 {
+    position: relative;
+}
+.hover_2 .img_wrap {
+    overflow: hidden;
+}
+.hover_2 .img_wrap img {
+    width: 100%;
+    transition: 1s;
+}
+.hover_2:hover .img_wrap img {
+    transform: scale(1.5) rotate(360deg);
 }
 
 .content-title{
     border: 1px #181819 solid;
     width: 400px;
-    margin: 10px;
+    margin: 0px 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
+    font-size: 20px;
 }
 
 .content-text{
-    border: 1px #181819 solid;
-    width: 400px;
-    height: 500px;
-    margin: 10px;
+    border: 1px solid;
+    max-width: 400px;
+    max-height: 400px;
+    height: 300px;
+    font-size: 17px;
+    margin: 0px 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
+    white-space : pre-wrap;
+    word-break: break-all
 }
+
 
 .detail-main{
     display: flex;
 }
 
-.detail-editing{
-    margin: 20px 20px 20px 20px;
-    text-align: right;
+.detail-editing {
+    text-decoration: none;
+    font-family: 'Reggae One', cursive;
+    border-radius: 0.3em;
+    background: linear-gradient(to right, #5bbee5, #52ddae);
+    font-size: 30px;
+    color:#fff;
+    margin: auto;
+    padding:10px;
+    justify-content: center;
+    display: table;
+}
+
+.detail-editing:before {
+    content: "編集";
+    color: #fff;
+    margin: 30px 30px;
+    padding:20px;
+}
+.detail-editing:hover:before {
+    margin: 30px 30px;
+    padding:20px;
+    content: "edit";
 }

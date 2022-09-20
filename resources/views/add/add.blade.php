@@ -90,6 +90,7 @@
                                 }
                                 </script>
                             </form>
+                <br>
                     <div class="detail-submit">
                         {{ csrf_field() }}
                         <button type="submit" class="button-hover"></button>
@@ -103,4 +104,5 @@
     <marquee behavior="alternate" direction="up"><marquee direction="left">new item</marquee></marquee>
 </div>
 @endsection
+@include("parts.footer")
 

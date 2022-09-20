@@ -2,41 +2,32 @@
 
 @section('content')
 
-
 <body>
     <div class="main-top">
         <div class="detail-top">
             <div class="name">
                 <p>商品詳細</p>
             </div>
-                <p class="detail-productlis">
-                    <a href="{{ url('/items') }}">戻る</a>
+                <p class="detail-productlist">
+                    <a class="return" href="{{ url('/items') }}"></a>
                 </p>
         </div>
         <div class="detail-main">
-            <div class="image">
-                {{-- TODO --}}
-                <img src="/teamhiroshima/storage/app/public/profile_images/はてな.jpeg">
-                <a href="はてな.jpg" data-lightbox="abc" data-title="拡大イメージ">
-                <img src="はてな.jpg" alt=イメージ写真">
-            </div>
+            <a href="{{ asset('image/はてな.jpeg') }}" data-lightbox="group" class="image_box hover_2">
+            <div class="img_wrap">
+                <img src="{{ asset('image/はてな.jpeg') }}" alt="hatena" width="300">
+            </div></a>
             <div class="detail-content">
                 <div class="content-title">
-                    <label for="title">本文</label>
+                    <label for="title">{{$item->name}}</label>
                 </div>
                 <div class="content-text">
-                    <label for="text">本文</label>
+                    <p for="text">{{$item->detail}}</p>
                 </div>
             </div>
         </div>
-        <p class="detail-editing">
-            <a href="/editing" rel="nofollow">編集</a>
-        </p>
+            <a class="detail-editing" href="/editing/{{$item->id}}"></a>
     </div>
-
-
-<script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
 
 </body>
 
