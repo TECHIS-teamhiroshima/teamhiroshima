@@ -1,15 +1,14 @@
 @extends('layouts.app')
-
 @section('content')
 <body>
     <div class="main">
         <div class="side-content">
-                <div class="side-title">
-                    <h5>商品管理システム</h5>
-                </div>
-                <div class="side-menu">
-                    <a href="">商品一覧</a>
-                </div>
+            <div class="side-title">
+                <h5>商品管理システム</h5>
+            </div>
+            <div class="side-menu">
+                <a href="">商品一覧</a>
+            </div>
         </div>
         <div class="main-content">
             <div class="list-page-title">
@@ -19,12 +18,12 @@
             <div class="item-table">
                 <table class="table">
                     <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>名前</th>
-                        <th>種別</th>
-                        <th>詳細</th>
-                    </tr>
+                        <tr>
+                            <th>ID</th>
+                            <th>名前</th>
+                            <th>種別</th>
+                            <th>詳細</th>
+                        </tr>
                     </thead>
                     <tbody id="tbl">
                     @foreach ($items as $item)
@@ -35,9 +34,9 @@
                             <td class="test">
                                 <span class="span-deteil">
                                 {{-- 詳細 --}}
-                                <p class="omit">
-                                    <a class="omit-a" href="/detail/{{$item->id}}">{{$item->detail}}</a>
-                                </p>
+                                    <p class="omit">
+                                        <a class="omit-a" href="/detail/{{$item->id}}">{{$item->detail}}</a>
+                                    </p>
                                 </span>
                                 <span class="span-opertion">
                                 {{-- 編集 --}}

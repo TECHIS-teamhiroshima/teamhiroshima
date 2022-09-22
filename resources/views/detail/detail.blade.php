@@ -1,7 +1,5 @@
 @extends('layouts.app')
-
 @section('content')
-
 <body>
     <div class="main-top">
         <div class="detail-top">
@@ -26,13 +24,10 @@
                 </div>
             </div>
         </div>
-            <a class="detail-editing" href="/editing/{{$item->id}}"></a>
+        <a class="detail-editing" href="/editing/{{$item->id}}"></a>
     </div>
-
 </body>
-
 <div class="end">
     <marquee behavior="alternate" direction="up"><marquee direction="left">Detil </marquee></marquee>
 </div>
-
 @endsection

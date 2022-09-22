@@ -76,6 +76,7 @@ input{
     border-radius: 20px;
     box-shadow: 1px 1px 0.5px rgb(14, 13, 13) inset;
     border: none;
+    margin-left: 20px;
 }
 
 select{
@@ -95,24 +96,26 @@ textarea{
     border-radius: 10px;
     box-shadow: 1px 1px 0.5px rgb(14, 13, 13) inset;
     border: unset;
+    margin-left: 20px;
 }
 
-.filelabel {
+.filelable {
     font-family: 'Reggae One', cursive;
     background: linear-gradient(to left, #07b3f7, #52ddae , #07b3f7);
-    color: white;              /* 文字色 */
-    border: 2px solid orange;  /* 枠線 */
-    border-radius: 10px;        /* 角丸 */
-    padding: 8px 20px;         /* 内側の余白 */
+    color: white;
+    border: 2px solid orange;
+    border-radius: 10px;
+    padding: 8px 20px;
     margin: 20px;
-    display: inline-block;     /* インラインブロック化 */
+    display: inline-block;
 }
 
-.filelabel img {
+.filelable img {
     vertical-align: bottom;    /* 画像の垂直方向の配置 */
+
 }
 
-.filelabel:hover {
+.filelable:hover {
     opacity: 0.8;              /* 半透明 */
     border: 2px solid red;     /* 枠線(赤色) */
     cursor: pointer;           /* マウス形状(ポインタ) */
@@ -123,7 +126,7 @@ textarea{
     display: none;  /* 本来のファイル選択フォームは非表示に */
 }
 
-#previewbox {
+#previewers {
     display: inline-block;     /* プレビュー領域をボタンと横並びに配置する */
     vertical-align: middle;    /* プレビュー画像の垂直方向の配置 */
 }
@@ -139,7 +142,6 @@ textarea{
 }
 
 .button-hover {
-    font-family: 'Reggae One', cursive;
     border-radius: 10px;
     margin: 0px 20px 30px 20px;
     padding: 10px;
@@ -149,9 +151,12 @@ textarea{
     background: linear-gradient(to right, #5bbee5, #52ddae);
     display:inline-block;
     border: 5px solid rgb(15, 25, 222);  /* 枠線 */
+            margin-left: 20px;
+
 }
 
 .button-hover:before {
+    font-family: 'Reggae One', cursive;
     content: "登録";
     font-size: 20px;
     color: #fff;

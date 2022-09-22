@@ -7,13 +7,11 @@
     font-size: none;
     text-decoration: none;
 }
-
 .main-content {
     min-width: 700px;
     width: auto;
     margin: 10px auto;
 }
-
 .side-content {
     border-right: 1px solid;
     min-width: 150px;
@@ -22,62 +20,50 @@
     background-color: aquamarine;
     padding: 10px 10px;
 }
-
 .side-menu {
     margin-left: 10px;
 }
-
 .side-menu a {
     text-decoration: none;
     color: black;
 }
-
 .list-page-title {
     display:flex ;
     margin: 10px;
 }
-
 .list-page-title a {
     margin: auto;
     text-decoration: none;
     padding-bottom: 10px ;
 }
-
 .title,h2 {
     color: rgb(31, 31, 33);
 }
-
 .test {
     border-top: none;
     border-left: none;
 }
-
 .test form {
     margin: auto;
     color: brown;
 }
-
 .tr,th,td {
     border: solid 1px;
     text-decoration: none;
     min-width:30px ;
 }
-
 th{
     text-align: center;
 }
-
 .td-detail{
     border: solid 1px;
     text-decoration: none;
     border-right:  none;
 }
-
 .span-detail{
     float: left;
     text-decoration: none;
 }
-
 .omit{
     text-decoration: none;
     width: 290px; /* 省略せずに表示するサイズを指定 */
@@ -85,12 +71,10 @@ th{
     overflow: hidden;
     text-overflow: ellipsis;
 }
-
 .omit-a{
     text-decoration: none;
     color: #0d0d0d;
 }
-
 .span-opertion{
     display:flex;
     float: right;
@@ -107,7 +91,6 @@ th{
     margin: 0px 5px;
     padding:0px 20px;
 }
-
 .button-hover-editing:before {
     content: "編集";
     font-size: 17px;

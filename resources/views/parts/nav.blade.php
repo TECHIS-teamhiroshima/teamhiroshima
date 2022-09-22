@@ -13,7 +13,7 @@
                     <a href="/login">Login</a>
                 </li>
                 <li>
-                  <a href="/home">Home</a>
+                    <a href="/home">Home</a>
                 </li>
                 <li>
                     <a href="/items">Productlist</a>
