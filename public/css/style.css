@@ -2,21 +2,24 @@
     text-decoration: none;
     margin:0;padding:0;
 }
+
 body {
 	font-size: 16px;
     background-color: #fbfeff ;
+	width: auto;
+	height: auto;
+	background-image:url("/image/back.png");
 }
 header {
     font-size: 10px;
 	background-color: #fcfaf4 ;
 	width: 100%;
 	height: 40px;
-    padding: 10px;
+    padding: 10px 0px;
 }
 header nav {
 	position: absolute;
 	float: right;
-	/* left: 600px; */
 	top: 15px;
 	line-height: 90px;
 }
@@ -30,16 +33,10 @@ footer {
 	background-color: #fcfaf4 ;
 	width: 100%;
 	text-align: center;
-	padding: 10px;
+    padding: 10px 0px;
     position: absolute;/*←絶対位置*/
     bottom: 0; /*下に固定*/
-}
-
-body {
-	margin: ;
-	width: 100%;
-	height: 100%;
-	background-image:url("/image/back.png");
+    z-index: 100;
 }
 
 .menu-btn {
@@ -99,7 +96,7 @@ body {
     width: 100%;
     height: 100%;
     position: fixed;
-    top: -80%;
+    top: -100%;
     z-index: 60;
     background-color: white;
     opacity: 0.85;

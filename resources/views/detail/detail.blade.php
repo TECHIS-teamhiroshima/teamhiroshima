@@ -31,3 +31,4 @@
     <marquee behavior="alternate" direction="up"><marquee direction="left">Detil </marquee></marquee>
 </div>
 @endsection
+@include("parts.footer")

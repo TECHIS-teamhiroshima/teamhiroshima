@@ -44,3 +44,4 @@
     </div>
 </body>
 @endsection
+@include("parts.footer")
