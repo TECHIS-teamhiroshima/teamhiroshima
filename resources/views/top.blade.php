@@ -24,3 +24,4 @@
         @include("parts.footer")
     </body>
 </html>
+
