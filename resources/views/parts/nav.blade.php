@@ -1,4 +1,4 @@
-<nav>
+<nav class="nav1">
 		{{-- <a href="/top">トップ</a> --}}
     <div class="hamburger-menu">
         <input type="checkbox" id="menu-btn-check">
