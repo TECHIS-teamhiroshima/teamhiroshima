@@ -30,4 +30,3 @@ Auth::routes();
     //edit,updateアクション
     Route::resource('/item', 'ItemsController', ['only' => ['create', 'store', 'detail', 'destroy', 'editing', 'update']]);
 });
-?>

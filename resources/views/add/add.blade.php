@@ -29,7 +29,7 @@
                             <option value="3">アクセサリ</option>
                         </datalist>
                 <h6>詳 細</h6>
-                        <textarea name="detail" rows="10" cols="55" placeholder="詳細を入力してください"></textarea> </textarea>
+                        <textarea name="detail" rows="10" cols="55" placeholder="詳細を入力してください"></textarea>
                             <br>
                             <form action="https://example.com/post/form/" method="post" enctype="multipart/form-data">
                                 <p>
