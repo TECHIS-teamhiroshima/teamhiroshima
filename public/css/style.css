@@ -1,9 +1,55 @@
-* {
-    text-decoration: none;
-    margin:0;padding:0;
+  /* 003 */
+.button003 a {
+    background: rgb(218, 218, 218);
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 10px 25px;
+    color: #000000;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+}
+.button003 a:hover {
+    background: #000000;
+    color: #FFF;
+}
+.button003 a:after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-top: 3px solid #313131;
+    border-right: 3px solid #313131;
+    transform: rotate(45deg) translateY(-50%);
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    border-radius: 1px;
+    transition: 0.3s ease-in-out;
+}
+.button003 a:hover:after {
+    border-color: rgb(153, 151, 151);
 }
 
-body {
+.button003{
+	display:inline-block;
+	text-align:center;
+	width:200px;
+	height:100px;
+  }
+
+.bottom_space {
+  margin-bottom: 50px;
+}
+
+-------------
+
+* { margin:0;padding:0;box-sizing: border-box; }
+
+.body1 {
 	font-size: 16px;
     background-color: #fbfeff ;
 	width: auto;
@@ -12,35 +58,59 @@ body {
 }
 .header1 {
     font-size: 10px;
-	background-color: #fcfaf4 ;
+	background-color: black ;
 	width: 100%;
 	height: 40px;
-    padding: 10px 0px;
+    padding: 10px;
+	color: white;
+    display: flex;
+    justify-content:space-between;
+    position: absolute;
+	float: right;
+}
+.header-h1{
+    padding:0px 10px;
+    margin: 10px;
+}
+.header-logout{
+    display:inline-block;
+    padding:10px;
+    margin: 10px;
 }
 .nav1 {
 	position: absolute;
 	float: right;
-	top: 15px;
-	line-height: 90px;
+	right: 15px;
+	top: 5px;
+	line-height: 50px;
 }
 .main1 {
     text-align: center;
-	padding: 200px;
+	padding: 100px;
 }
 .footer1 {
     font-size: 10px;
-	background-color: #fcfaf4 ;
+	background-color: black ;
 	width: 100%;
 	text-align: center;
-    padding: 10px 0px;
-    position: fixed;/*←絶対位置*/
+	padding: 10px;
+    position: absolute;/*←絶対位置*/
     bottom: 0; /*下に固定*/
-    z-index: 100;
+	color: white;
 }
 
+/* TODO */
+.body1 {
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+	background-image:url("/image/back4.jpg");
+	background-size: cover;
+  }
+
+
 .menu-btn {
-    position: fixed;
-    top: 10px;
+    top: auto;
     right: 10px;
     display: flex;
     height: 60px;
@@ -88,10 +158,11 @@ body {
     top: 0;
     transform: rotate(-45deg);
     background-color: #ccc;
-    transition: all 300ms 0s ease;
+    transition: all 200ms 0s ease;
 }
 
 .menu-content {
+    left: 0px;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -100,7 +171,7 @@ body {
     background-color: white;
     opacity: 0.85;
     color: #222;
-    transition: all 1500ms 0s ease;
+    transition: all 600ms 0s ease;
 }
 
 #menu-btn-check:checked ~ .menu-content {
@@ -125,7 +196,7 @@ body {
     position: relative;
     text-indent: 0em;
     letter-spacing: 0.2em;
-    left: 300px;
+    left: 100px;
 }
 .menu-content ul li a::before {
     content: "";
@@ -136,10 +207,15 @@ body {
     border-right: solid 3px #ccc;
     transform: rotate(45deg);
     left: 10px;
-    top: 51px;
+    top: 23px;
     background: linear-gradient(to right, #5bbee5, #52ddae);
 }
 
 .menu-content ul li a:hover:after{
     left: 100px;
 }
+
+.hamburger-menu{
+    display: flex;
+}
+

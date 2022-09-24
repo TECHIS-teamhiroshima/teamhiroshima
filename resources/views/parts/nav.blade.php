@@ -1,3 +1,4 @@
+
 <nav class="nav1">
 		{{-- <a href="/top">トップ</a> --}}
     <div class="hamburger-menu">
@@ -6,12 +7,6 @@
         <!--ここからメニュー-->
         <div class="menu-content">
             <ul>
-                <li>
-                    <a href="/register">Register</a>
-                </li>
-                <li>
-                    <a href="/login">Login</a>
-                </li>
                 <li>
                     <a href="/home">Home</a>
                 </li>
@@ -25,4 +20,6 @@
         </div>
         <!--ここまでメニュー-->
     </div>
+
+
 </nav>
