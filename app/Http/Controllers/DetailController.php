@@ -12,12 +12,4 @@ class DetailController extends Controller
     {
         return view('detail.detail');
     }
-
-
-public function store(Request $request)
-{
-    $document = $request->document;
-    // 画像を"storage/app/public"に保存
-    $document->store('public');
-}
 }

@@ -1,60 +1,117 @@
 .main{
     display: flex;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: auto;
     border: solid 1px;
+    font-family:none;
+    font-size: none;
+    text-decoration: none;
 }
-
 .main-content {
-    width: 1000px;
+    min-width: 700px;
+    width: auto;
     margin: 10px auto;
 }
-
 .side-content {
     border-right: 1px solid;
+    min-width: 150px;
 }
 .side-title h5 {
     background-color: aquamarine;
     padding: 10px 10px;
 }
-
 .side-menu {
     margin-left: 10px;
 }
-
 .side-menu a {
     text-decoration: none;
     color: black;
 }
-
-.page-title {
-    display: flex;
+.list-page-title {
+    display:flex ;
+    margin: 10px;
 }
-
-.page-title a {
+.list-page-title a {
+    margin: auto;
+    text-decoration: none;
+    padding-bottom: 10px ;
+    color: #0d0d0d;
     margin: 0 0 0 auto;
-}
 
+}
 .title,h2 {
     color: rgb(31, 31, 33);
 }
-
 .test {
-    display: flex;
     border-top: none;
-    border-left:  none;
+    border-left: none;
 }
 .test form {
-    margin: 0 0 0 auto;
+    margin: auto;
     color: brown;
 }
-
 .tr,th,td {
     border: solid 1px;
     text-decoration: none;
+    min-width:30px ;
+}
+th{
+    text-align: center;
+}
+.td-detail{
+    border: solid 1px;
+    text-decoration: none;
+    border-right:  none;
+}
+.span-detail{
+    float: left;
+    text-decoration: none;
+}
+.omit{
+    text-decoration: none;
+    width: 290px; /* 省略せずに表示するサイズを指定 */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.omit-a{
+    text-decoration: none;
+    color: #0d0d0d;
+}
+.span-opertion{
+    display:flex;
+    float: right;
 }
 
-a {
+.button-hover-editing {
     text-decoration: none;
-    color: black;
+    font-family: 'Reggae One', cursive;
+    border-radius: 0.3em;
+    background: linear-gradient(to right, #5bbee5, #52ddae);
+    display:block;
+    font-size: 17px;
+    color:#fff;
+    margin: 0px 5px;
+    padding:0px 20px;
 }
+.button-hover-editing:before {
+    content: "編集";
+    font-size: 17px;
+    color: #fff;
+    display:block;
+}
+.button-hover-editing:hover:before {
+    content: "edit";
+}
+
+.button-delete {
+    font-family: 'Reggae One', cursive;
+    border-radius: 0.3em;
+    font-size: 17px;
+    color:#fff;
+    background: linear-gradient(to top, #444747, #fa0505);
+    display:block;
+    margin: 0px 5px;
+    padding:0px 20px;
+}
+
