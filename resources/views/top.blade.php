@@ -3,11 +3,9 @@
 <head>
 <link rel="stylesheet" href="{{  asset('css/style.css') }}" />
 </head>
-<body>
+<body class="body1">
     @include("parts.header")
-    <main>
-    
-	
+    <main class="main1">
     <h1 class="bottom_space">Stock Management</h1>
 
     <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">

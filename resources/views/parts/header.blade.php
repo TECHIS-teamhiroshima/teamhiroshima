@@ -7,6 +7,7 @@
             @if (Route::has('register'))
             @endif
         @else
+        <div>
             <p class="nav-item dropdown">
                 <p id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                     {{ Auth::user()->name }}
