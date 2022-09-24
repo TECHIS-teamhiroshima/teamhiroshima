@@ -19,7 +19,7 @@
                 <div class="editing-right">
                     <h6 class="text-top">名 前</h6>
                     @include('common.errors')
-                    <form action="{{ route('item.update' ,$item->id) }}" enctype="multipart/form-data" method="POST"
+                    <form action="/item/{{ $item->id }}" enctype="multipart/form-data" method="POST"
                         class="form-horizontal2">
                         @csrf
                         @method('PUT')

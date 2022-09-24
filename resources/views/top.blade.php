@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="{{  asset('css/style.css') }}" />
+<link rel="stylesheet" href="{{  asset('css/style.css') }}">
 </head>
     <body class="body1">
         @include("parts.header")
