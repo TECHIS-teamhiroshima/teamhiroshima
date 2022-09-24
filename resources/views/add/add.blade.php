@@ -18,6 +18,7 @@
         </div>
         <form action="/add" method="POST">
             <input type="hidden" name="user_id" value="{{ $user_id }}">
+            <input type="hidden" name="status" value="{{ $status }}">
             <div class="rigth">
                 <h6 class="text-top">名 前</h6>
                     <input type="text" name="name" placeholder="商品名を入力してください">

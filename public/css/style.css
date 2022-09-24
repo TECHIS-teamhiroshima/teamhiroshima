@@ -94,7 +94,7 @@
 	width: 100%;
 	text-align: center;
 	padding: 10px;
-    position: absolute;/*←絶対位置*/
+    position: fixed;/*←絶対位置*/
     bottom: 0; /*下に固定*/
 	color: white;
 }
