@@ -79,22 +79,12 @@ class ItemController extends Controller
     public function update(Request $request, $id)
         {
         $item = Item::find($id);
-        // $item->user_id = Auth::id();
         $item->name = $request->input('name');
         $item->type = $request->input('type');
         $item->detail = $request->input('detail');
-        // $item->describe = $request->input('describe');
-        // $item->play_time = $request->input('play_time');
-        // $item->players_minimum = $request->input('players_minimum');
-        // $item->players_max = $request->input('players_max');
-
-        // $image = $request->file('image');
-        // $path = Storage::disk('s3')->putFile('bgama32070', $image, 'public');
-        // $item->image_path = Storage::disk('s3')->url($path);
 
         $item->save();
 
-        // return redirect('/')->with('success', '更新しました');
         return redirect('/items');
     }
 }
