@@ -1,3 +1,99 @@
+* { margin:0;padding:0;box-sizing: border-box; }
+body {
+	font-size: 16px;
+    background-color: #fbfeff ;
+}
+header {
+    font-size: 10px;
+	background-color: black ;
+	width: 100%;
+	height: 40px;
+    padding: 10px;
+	color: white;
+}
+header nav {
+	position: absolute;
+	float: right;
+	right: 15px;
+	top: 5px;
+	line-height: 50px;
+}
+main {
+    text-align: center;
+	padding: 100px;
+	
+	
+}
+
+footer {
+    font-size: 10px;
+	background-color: black ;
+	width: 100%;
+	text-align: center;
+	padding: 10px;
+    position: absolute;/*←絶対位置*/
+    bottom: 0; /*下に固定*/
+	color: white;
+}
+
+body {
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+	background-image:url("/image/back4.jpg");
+	background-size: cover;
+  }
+
+  /* 003 */
+.button003 a {
+    background: rgb(218, 218, 218);
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 10px 25px;
+    color: #000000;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+}
+.button003 a:hover {
+    background: #000000;
+    color: #FFF;
+}
+.button003 a:after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-top: 3px solid #313131;
+    border-right: 3px solid #313131;
+    transform: rotate(45deg) translateY(-50%);
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    border-radius: 1px;
+    transition: 0.3s ease-in-out;
+}
+.button003 a:hover:after {
+    border-color: rgb(153, 151, 151);
+}
+
+.button003{
+	display:inline-block;
+	text-align:center;
+	width:200px;
+	height:100px;
+  }
+
+  
+.bottom_space {
+  margin-bottom: 50px;
+}
+
+-------------
+
 * {
     text-decoration: none;
     margin:0;padding:0;
@@ -156,3 +252,4 @@
 .hamburger-menu{
     display: flex;
 }
+
