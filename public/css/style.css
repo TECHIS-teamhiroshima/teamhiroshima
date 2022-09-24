@@ -3,7 +3,7 @@
     margin:0;padding:0;
 }
 
-body {
+.body1 {
 	font-size: 16px;
     background-color: #fbfeff ;
 	width: auto;
@@ -14,14 +14,23 @@ body {
     font-size: 10px;
 	background-color: #fcfaf4 ;
 	width: 100%;
-	height: 40px;
-    padding: 10px 0px;
+    display: flex;
+    justify-content:space-between;
+}
+.header-h1{
+    padding:0px 10px;
+    margin: 10px;
+}
+.header-logout{
+    display:block;
+    padding:10px;
+    margin: 10px;
 }
 .nav1 {
 	position: absolute;
 	float: right;
 	top: 15px;
-	line-height: 90px;
+	line-height: auto;
 }
 .main1 {
     text-align: center;
@@ -39,8 +48,7 @@ body {
 }
 
 .menu-btn {
-    position: fixed;
-    top: 10px;
+    top: auto;
     right: 10px;
     display: flex;
     height: 60px;
@@ -88,10 +96,11 @@ body {
     top: 0;
     transform: rotate(-45deg);
     background-color: #ccc;
-    transition: all 300ms 0s ease;
+    transition: all 200ms 0s ease;
 }
 
 .menu-content {
+    left: 0px;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -100,7 +109,7 @@ body {
     background-color: white;
     opacity: 0.85;
     color: #222;
-    transition: all 1500ms 0s ease;
+    transition: all 600ms 0s ease;
 }
 
 #menu-btn-check:checked ~ .menu-content {
@@ -125,7 +134,7 @@ body {
     position: relative;
     text-indent: 0em;
     letter-spacing: 0.2em;
-    left: 300px;
+    left: 100px;
 }
 .menu-content ul li a::before {
     content: "";
@@ -136,10 +145,14 @@ body {
     border-right: solid 3px #ccc;
     transform: rotate(45deg);
     left: 10px;
-    top: 51px;
+    top: 23px;
     background: linear-gradient(to right, #5bbee5, #52ddae);
 }
 
 .menu-content ul li a:hover:after{
     left: 100px;
+}
+
+.hamburger-menu{
+    display: flex;
 }
