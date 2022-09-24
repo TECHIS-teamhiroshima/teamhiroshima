@@ -102,4 +102,3 @@
 </body>
 @endsection
 @include("parts.footer")
-
