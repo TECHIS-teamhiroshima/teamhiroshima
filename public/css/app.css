@@ -98,6 +98,8 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   box-sizing: content-box;
+
+    background-image:url("/image/back.png");
 }
 
 hr {
@@ -3779,6 +3781,7 @@ textarea.form-control-lg {
   align-items: center;
   justify-content: space-between;
   padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+
 }
 .navbar > .container,
 .navbar > .container-fluid,

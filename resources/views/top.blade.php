@@ -3,7 +3,7 @@
 <head>
 <link rel="stylesheet" href="{{  asset('css/style.css') }}" />
 </head>
-    <body>
+    <body class="body1">
         @include("parts.header")
         <main class="main1">
             <h1>Stock Management</h1>
