@@ -3,7 +3,7 @@
     margin:0;padding:0;
 }
 
-.body1 {
+body {
 	font-size: 16px;
     background-color: #fbfeff ;
 	width: auto;
@@ -26,7 +26,6 @@
 .main1 {
     text-align: center;
 	padding: 200px;
-
 }
 .footer1 {
     font-size: 10px;
